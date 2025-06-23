@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiddo</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -12,14 +13,14 @@
                 <!--logo text section  -->
                 <h2 class="logo-text">Kiddo's World</h2>
         </div>
-        <nav>
+        <nav id="navbar">
             <!-- Navbar Section -->
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Event</li>
-                <li>Kid Valley</li>
-                <li>Contact</li>
+                <li><a href="#">Home</a></li> |
+                <li><a href="#">About</a></li> |
+                <li><a href="#">Event</a></li> |
+                <li><a href="#">Kid Valley</a></li> |
+                <li><a href="#">Contact</a></li>
             </ul>
 
         </nav>
@@ -31,18 +32,22 @@
         </div>
     </header>
 
-    <main>
-            <!-- Hero text here  -->
-             <h1>Kiddo Amusement Park</h1>
+    <main class="container">
+            <div class="hero-section">
+                <!-- Hero text here  -->
+                 <h1 class="hero-text">Kiddo Amusement Park</h1>
+            </div>
              
 
-             <button class="btn-active btn" >
-                   Book A Play Ground 
-             </button>
-             
-             <button class="btn">
-                   Need Kid's Room Decoration
-             </button>
+             <div class="all-btns">
+                 <button class="btn-active btn" >
+                       Book A Play Ground
+                 </button>
+                 
+                 <button class="btn">
+                       Need Kid's Room Decoration
+                 </button>
+             </div>
 
     </main>
 

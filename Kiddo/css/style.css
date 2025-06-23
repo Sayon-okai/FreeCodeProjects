@@ -1,0 +1,124 @@
+/* Default style rule */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+}
+
+/* primary data */
+ /* 
+     #################
+          Color
+    ##################
+
+    Header-Color - - - color: rgb(253, 125, 35);
+
+    hero text 
+        color: #fff;
+
+    btn-active
+        background-color: rgb(253, 125, 35);
+
+
+ */
+ body {
+         /* Background img */
+         background: url(../images/background.jpg);
+         background-size: cover;
+
+ }
+
+
+ /* header  */
+
+ header {
+           display: flex;
+           justify-content: space-between;
+           padding: 10px 30px;
+           background-color: none;
+
+ }
+
+ /* Logo text */
+
+ .logo-text {
+      color: rgb(253, 125, 35);
+      font-size: 2em;
+      font-family: cursive;
+      font-weight: bolder;
+ }
+
+ /* Nav */
+
+ #navbar  ul li {
+                   display: inline-flex;
+                   height: 100px;
+                   
+                   
+   
+ }
+/* links */
+
+ ul li a {
+           text-decoration: none;
+           color: #fff;
+           font-size: 1.3em;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           padding-top: 40px;
+           margin: 15px;
+ }
+
+a:hover {
+           color: rgba(200, 87, 6, 0.649);
+           font-size: 1.4em;
+           transition: 0.4s ease-in-out;
+}
+
+ /* Main Container */
+
+ .container {
+         position: absolute;
+         top: 40%;
+         left: 25%;
+
+ }
+
+ /* Hero Section */
+ .hero-section {
+    margin-bottom:  15px;
+ }
+
+
+ /* Hero text  */
+ .hero-text {
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+ }
+
+ /* btns  */
+
+ .all-btns {
+    padding: 20px 30px;
+ }
+
+ .btn {
+        background: none;
+        width: 230px;
+        height: 35px;
+        border: 1px solid white;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 15px;
+ }
+
+
+
+
+
+
+
+
+
+
