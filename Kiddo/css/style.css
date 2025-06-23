@@ -44,9 +44,10 @@
 
  .logo-text {
       color: rgb(253, 125, 35);
-      font-size: 2em;
+      font-size: 2.5em;
       font-family: cursive;
       font-weight: bolder;
+      text-decoration-line: overline underline;
  }
 
  /* Nav */
@@ -101,7 +102,7 @@ a:hover {
 
  /* Hero Section */
  .hero-section {
-    margin-bottom:  15px;
+    margin: 0 0 15px -35px;
  }
 
 
@@ -126,6 +127,11 @@ a:hover {
         color: #fff;
         font-size: 1em;
         border-radius: 15px;
+ }
+
+ .btn-active {
+    background-color: rgb(253, 125, 35);
+    font-weight: bold;
  }
 
 
