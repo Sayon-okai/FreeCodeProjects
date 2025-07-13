@@ -44,11 +44,19 @@
  /* Logo text */
 
  .logo-text {
+       margin-top: 25px;
       color: rgb(253, 125, 35);
       font-size: 2.5em;
       font-family: cursive;
       font-weight: bolder;
       text-decoration-line: overline underline;
+      transition: 1s ease-out;
+      
+ }
+
+ .logo-text:hover {
+         transform: rotate(22deg) skewX(25deg);
+         transition: 1s ease-in-out;
  }
 
  /* Nav */
@@ -127,6 +135,7 @@ a:hover {
     font-size: 4em;
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
+    transform: skewY(15deg);
  }
 
  /* btns  */
