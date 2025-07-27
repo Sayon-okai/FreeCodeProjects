@@ -7,8 +7,25 @@
     <title>GBU|English Exam</title>
 </head>
 <body>
-      <h1 class="hero-text">GBU Entrance Examination Council</h1>
-      <h2 class="sub-info">English Examination 2025</h2>
+      <h1 class="hero-text active-screen">GBU Entrance Examination Council</h1>
+      <h2 class="sub-info active-screen">English Examination 2025</h2>
+      <div class="exam-timer active-screen">
+        <div class="timer">
+           Time:
+            <span class="time">60</span> Mins
+        </div>
+          <br />
+        <div class="timer-info">
+           <p>
+              Please complete the exam before the time runs out.
+              The exam will automatically submit when the time is up.
+              
+                    <br />
+                <strong>Good Luck!</strong>
+
+           </p>
+        </div>
+      </div>
     <div class="container">
         <div class="start-screen active-screen">
             <button class="btn-start-exam">Start Exam</button>
@@ -19,27 +36,47 @@
             </p>
         </div>
     
-    <div class="exam-screen ">
-        <div class="question">
-           
-        </div>
-        <!-- Question  -->
-         <div class="question-number">
+            <!-- Exam Screen -->
+
+    <div class="exam-screen">
+        <div class="question-number">
             Question: <span class="track-question">0</span>
         </div>
-        <div class="answers">
+        <!-- Question  -->
+        <div class="question">
+           
             Exam Question Here
+        </div>
+        
+        <div class="answers">
+            <ul id="options">
+            
+            </ul>
+            Exam Answer Here
         </div>
         <div class="progress-bar">
             <div class="progress">
                 <!-- Progress Bar  -->
             </div>
         </div>
+        <div class="all-btn">
+            <button class="prev-question">Previous Questions</button><button class="next-question">Next Questions</button>
+        </div>
     </div>
+
+    <!-- Result Screen -->
+     <div class="result-screen">
+        <div>
+             <!-- Result Here -->
+        </div>
+     </div>
     </div>
-      <div class="all-btn">
-          <button class="prev-question">Previous Questions</button
-            ><button class="next-question">Next Questions</button>
-      </div>
+     <footer class="footer active-screen">
+          GBU Entrance Examination Council &copy; 2025
+          <br />
+          <a href="mailto:gbuexamcouncil@gbu.com">GBU Examination Council</a>
+     </footer>
+
+    <script src="./scripts/english.js"></script>
 </body>
 </html>

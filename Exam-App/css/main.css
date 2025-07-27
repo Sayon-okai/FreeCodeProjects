@@ -7,6 +7,7 @@
 
 body {
        background-color: rgba(19, 7, 1, 0.681);
+       visibility: hidden;
 }
 
 .hero-text {
@@ -24,15 +25,32 @@ body {
 
 }
 
+.exam-timer {
+             width: 30%;
+             height: 300px;
+             font-size: 2em;
+             position: absolute;
+             /* background-color: #fff; */
+             padding: 20px;
+             margin: 20px 10px 5px 20px;
+}
+
+.timer .time {
+               font-size: 2em;
+               color: #fff;
+               word-spacing: 2pt;
+}
+
 .container {
-             background-color: antiquewhite;
+             /* background-color: antiquewhite; */
              width: 80%;
-             height: 650px;
+             height: 750px;
              position: relative;
              top: 30px;
              left: 170px;
        
 }
+
 
 .start-screen {
     width: 100%;
@@ -40,15 +58,16 @@ body {
     text-align: center;
     padding: 10px;
     display: flex;
+    margin-top: 15%;
     justify-content: space-between;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .start-screen p {
       font-family: 'Courier New', Courier, monospace;
       font-size: 1.5em;
       margin: 60px 10px 15px 33px;
-      border: 5px solid #fff;
+      /* border: 5px solid #fff; */
       border-radius: 15px;
       padding-top: 25px;
        
@@ -57,8 +76,123 @@ body {
        position: absolute;
        text-transform: capitalize;
        font-size: 2.5em;
-       color: #550303;
+       color: #f2dfdf;
        font-family: Arial, Helvetica, sans-serif;
        margin: 10px 10px 5px 20%;
        
+}
+
+.btn-start-exam {
+       width: 40%;
+       height: 70px;
+       background-color: #fff;
+       color: #000;
+       font-size: 2em;
+       border-radius: 15px;
+       border: none;
+       cursor: pointer;
+       transition: all 1.3s ease;
+       position: absolute;
+       top: 200px;
+       left: 30%;
+}
+
+
+.btn-start-exam:hover {
+       background-color: #979292;
+       width: 45%;
+       height: 78px;
+       font-size: 2.3em;
+       left: 28%;
+       transition: all 1s ease;
+       border-bottom: 2px solid #000;
+}
+
+.all-btn {
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          /* background-color: aliceblue; */
+          padding: 5px 20px 5px 20px;
+}
+
+.all-btn button {
+               width: 20%;
+               height: 60px;
+               background-color: #fff;
+               color: #000;
+               font-size: 1.5em;
+               border-radius: 15px;
+               border: 2px solid #f2dfdf;
+               cursor: pointer;
+               transition: all 1.5s ease;
+}
+
+.all-btn button:hover {
+               background-color: #0c79e5;
+               width: 22%;
+               height: 65px;
+               color: #fff;
+               font-size: 1.7em;
+               border-bottom: 1px solid #f2f2f2;
+               transition: all 1s ease;
+}
+
+/* Exam Screen */
+.exam-screen {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: -230px;
+    text-align: center;
+    /* background-color: bisque; */
+    /* background-color: lightgray; */
+}
+
+.answers {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    /* background-color: #fff; */
+}
+/* ################################################### */
+      /* Screen Class Active is to display  */
+/* ################################################### */
+
+
+
+.active-screen {
+       visibility: visible;
+}
+
+.question, .question-number {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    font-size: 2em;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    top: 110vh;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 10px;
 }
